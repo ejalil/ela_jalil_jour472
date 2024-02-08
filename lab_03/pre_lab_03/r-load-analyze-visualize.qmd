@@ -23,17 +23,15 @@ help.start()
 ```
 
 <br> <br> In the bottom right window of R Studio, you will see a Help
-window that displays basic help commands for the program. 
+window that displays basic help commands for the program.
 
 ### Install software to grab data
 
-```         
-Tidyverse: Eight separate software packages to perform
-data import, tidying, manipulation, visualisation, and            programming
+    Tidyverse: Eight separate software packages to perform
+    data import, tidying, manipulation, visualisation, and            programming
 
-Rio: Easy importing features 
-Janitor: Data cleaning
-```
+    Rio: Easy importing features 
+    Janitor: Data cleaning
 
 You should have installed tidyverse already. If not, then delete the
 hashtag in front of install.packages("tidyverse") and run the code chunk
@@ -69,24 +67,20 @@ project involving reporters worldwide to share information about
 salaries and benefits. Open this [file in Google
 Sheets](https://docs.google.com/spreadsheets/d/1jkbQFwIdaWv8K00Ad6Wq7ZxFTUPFQA-g/edit#gid=1655992481)
 
-```         
-1) Select Salaries tab
+    1) Select Salaries tab
 
-IRE Old School: Four Corners Test!
-13 Columns
-1658 Rows
+    IRE Old School: Four Corners Test!
+    13 Columns
+    1658 Rows
 
-Numberic data in Salary, Years Experience
-Mixed string data in Gender Identity / Ethnicity, Job duties
-```
+    Numberic data in Salary, Years Experience
+    Mixed string data in Gender Identity / Ethnicity, Job duties
 
 <br> <br>
 
 ### Import Data
 
-```         
-We'll now load this data into R. You can load spreadsheets from the Internet as follows:
-```
+    We'll now load this data into R. You can load spreadsheets from the Internet as follows:
 
 ```{r}
 MediaBucks <- rio::import("https://docs.google.com/spreadsheets/d/1jkbQFwIdaWv8K00Ad6Wq7ZxFTUPFQA-g/edit#gid=1655992481", which = "RealMediaSalaries2")
@@ -192,26 +186,22 @@ quantile(MediaBucks$Salary, c(0.25, 0.50, 0.75, 0.9, 0.99), na.rm=TRUE)
 
 ### Navigation Tips
 
-```         
-Shortcut Commands
-Tab - Autocomplete
-In Console Window (lower left) 
---Control (or Command) + UP arrow - last lines run
-Control (or Command) + Enter - Runs current or selected lines of code in the top left box of RStudio
-Shift + Control (or Command) +P - Reruns previous region code
-```
+    Shortcut Commands
+    Tab - Autocomplete
+    In Console Window (lower left) 
+    --Control (or Command) + UP arrow - last lines run
+    Control (or Command) + Enter - Runs current or selected lines of code in the top left box of RStudio
+    Shift + Control (or Command) +P - Reruns previous region code
 
 <br> <br>
 
 ### Dplyr
 
-```         
-dplyr has many tools for data analysis   
-select Choose which columns to include  
-filter Filter the data 
-arrange Sort the data, by size for continuous variables, by date, or alphabetically 
-group_by Group the data by a categorical variable 
-```
+    dplyr has many tools for data analysis   
+    select Choose which columns to include  
+    filter Filter the data 
+    arrange Sort the data, by size for continuous variables, by date, or alphabetically 
+    group_by Group the data by a categorical variable 
 
 <br>
 
@@ -265,10 +255,18 @@ MediaBucks %>%
 
 Questions:
 
-```         
-1: View the range of your data    
-2: Number of rows  
-3: Number of rows cut with filter  
+    1: View the range of your data    
+    2: Number of rows  
+    3: Number of rows cut with filter  
+
+```{r}
+#1
+summary(MediaBucks$Salary)
+#2
+nrow(MediaBucks)
+#3
+nrow(MediaSalary)
+
 ```
 
 <br>
@@ -312,11 +310,29 @@ summary(Reporters$Salary)
 
 Questions:
 
-```         
-1: Who is making $230,504 as a reporter???   
-2: Make a table for editors, figure out medians.   
-3: Find highest paid editor. Resent them.   
-4: Make a table for any position involving data  
+    1: Who is making $230,504 as a reporter???   
+    2: Make a table for editors, figure out medians.   
+    3: Find highest paid editor. Resent them.   
+    4: Make a table for any position involving data  
+
+```{r}
+#1 Senior Reporter at Pro Publica
+view(Reporters)
+view(Salary)
+Reporters %>%
+desc(Salary)
+
+#2
+Editors <- subset(MediaBucks, grepl("?editor",TITLE))
+summary(Editors$Salary)
+#3 The highest paid editor is an editorial director at Conde Nast
+view(Editors)
+view(Salary)
+Editors %>%
+desc(Salary)
+#4
+Data <- subset(MediaBucks,grepl("?data",TITLE))
+summary(Data$Salary)
 ```
 
 Table with Black reporters at Wall Street Journal
@@ -385,36 +401,41 @@ and captions.
 
 ### What You Have Learned So Far
 
-```         
-How to navigate in R studio   
-How to install libraries and packages    
-How to import a .xlsx file into R   
-How to obtain summary statistics (summary)   
-How to build basic tables from a dataset   
-How to conduct filter queries from a dataset   
-```
+    How to navigate in R studio   
+    How to install libraries and packages    
+    How to import a .xlsx file into R   
+    How to obtain summary statistics (summary)   
+    How to build basic tables from a dataset   
+    How to conduct filter queries from a dataset   
 
 ### Questions
 
-```         
-1: Build a table for NewYorkTimes employees, and determine median salary of NewYorkTimes employees   
-```
+    1: Build a table for NewYorkTimes employees, and determine median salary of NewYorkTimes employees   
 
 ```{r}
 #your answer here
+NYT <-subset(MediaBucks, COMPANY=="NewYorkTimes")
+summary(NYT$Salary)
 ```
 
-```         
-  2: Identify title, gender and race of the highest paid position at NYT  
-```
+      2: Identify title, gender and race of the highest paid position at NYT  
+      filter(Salary >= 1000)
+    view(NYT)
+    max(NYT$Salary)
+    column_max_salary <-"Salary"
+    row_max_value <-which.max(NYT[[column_max_salary]])
+    print(row_max_value)
+    specific_row <- 28
+    specific_row_data <-NYT[specific_row]
 
 ```{r}
 #your answer here
+
+  
+
 ```
 
-```         
-3: Search for Bloomberg,  check median salary, compare to NYT results above.
-```
+    3: Search for Bloomberg,  check median salary, compare to NYT results above.
 
 ```{r}
 #your answer here
