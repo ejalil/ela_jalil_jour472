@@ -317,19 +317,24 @@ Questions:
 
 ```{r}
 #1 Senior Reporter at Pro Publica
-view(Reporters)
-view(Salary)
-Reporters %>%
-desc(Salary)
+View(Reporters)
+View(Salary)
 
+report <- as_tibble(Reporters)
+
+report %>%
+  arrange(desc(Salary))
+
+view(report)
 #2
 Editors <- subset(MediaBucks, grepl("?editor",TITLE))
 summary(Editors$Salary)
 #3 The highest paid editor is an editorial director at Conde Nast
 view(Editors)
 view(Salary)
+reporte <-as_tibble(Editors)
 Editors %>%
-desc(Salary)
+arrange(desc(Salary))
 #4
 Data <- subset(MediaBucks,grepl("?data",TITLE))
 summary(Data$Salary)
@@ -416,30 +421,32 @@ and captions.
 #your answer here
 NYT <-subset(MediaBucks, COMPANY=="NewYorkTimes")
 summary(NYT$Salary)
+median(NYT$Salary)
 ```
 
       2: Identify title, gender and race of the highest paid position at NYT  
-      filter(Salary >= 1000)
-    view(NYT)
-    max(NYT$Salary)
-    column_max_salary <-"Salary"
-    row_max_value <-which.max(NYT[[column_max_salary]])
-    print(row_max_value)
-    specific_row <- 28
-    specific_row_data <-NYT[specific_row]
 
 ```{r}
-#your answer here
-
-  
-
+#your answer here They are an Executive Editor, News, noanswer for gender, and their race is black
+highest_paid_row <- max(NYT$Salary)
+highest_paid_title <- NYT$TITLE[highest_paid_row]
+highest_paid_gender <- NYT$Gender[highest_paid_row]
+highest_paid_race <- NYT$Race[highest_paid_row]
+cat("Highest Paid Position at NYT:\n")
+cat("Title: ", highest_paid_title, "\n")
+cat("Gender: ", highest_paid_gender, "\n")
+cat("Race: ", highest_paid_race, "\n")
 ```
 
     3: Search for Bloomberg,  check median salary, compare to NYT results above.
 
 ```{r}
 #your answer here
-
+Bloom <- subset(MediaBucks, COMPANY == "Bloomberg")
+View(Bloom)
+median(Bloom$Salary)
+median(NYT$Salary)
+#Bloomberg has a lower median salary than the New York Times
 ```
 
 ### Tutorials
