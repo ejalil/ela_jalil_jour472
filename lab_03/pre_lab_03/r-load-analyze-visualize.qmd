@@ -425,17 +425,23 @@ median(NYT$Salary)
 ```
 
       2: Identify title, gender and race of the highest paid position at NYT  
+    highest_paid_row <- max(NYT$Salary)
+    highest_paid_title <- NYT$TITLE[highest_paid_row]
+    highest_paid_gender <- NYT$Gender[highest_paid_row]
+    highest_paid_race <- NYT$Race[highest_paid_row]
+    cat("Highest Paid Position at NYT:\n")
+    cat("Title: ", highest_paid_title, "\n")
+    cat("Gender: ", highest_paid_gender, "\n")
+    cat("Race: ", highest_paid_race, "\n")
 
 ```{r}
 #your answer here They are an Executive Editor, News, noanswer for gender, and their race is black
-highest_paid_row <- max(NYT$Salary)
-highest_paid_title <- NYT$TITLE[highest_paid_row]
-highest_paid_gender <- NYT$Gender[highest_paid_row]
-highest_paid_race <- NYT$Race[highest_paid_row]
-cat("Highest Paid Position at NYT:\n")
-cat("Title: ", highest_paid_title, "\n")
-cat("Gender: ", highest_paid_gender, "\n")
-cat("Race: ", highest_paid_race, "\n")
+install.packages("dplyr")
+library(dplyr)
+MediaBucks %>%
+  filter(COMPANY=="NewYorkTimes") %>%
+  arrange(desc(Salary))
+  
 ```
 
     3: Search for Bloomberg,  check median salary, compare to NYT results above.
