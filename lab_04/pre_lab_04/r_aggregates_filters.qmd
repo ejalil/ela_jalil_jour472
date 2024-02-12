@@ -357,7 +357,7 @@ baltcity_income %>%
 below_median <- view((97/200)*100)
 #48.5% (97/200) of the city's census tracts are below the median household income for 2020 which is $49,875. 
 
-#Tweet: Almost half of the neighborhoods in Baltimore City (48.5%) are below the citywide 2020 median household income, an analysis shows. Read more at link in bio for further information. 
+#Tweet: Almost half of the neighborhoods in Baltimore City (97/200 or 48.5%) are below the citywide 2020 median household income, an analysis shows. Read more at link in bio for further information. 
 
 
 ```
