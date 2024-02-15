@@ -12,9 +12,9 @@ knitr::opts_chunk$set(echo = TRUE)
 options(scipen=999)
 
 # Load the tidyverse here
-
+library(tidyverse)
 # Load janitor here
-
+library(janitor)
 
 
 ```
@@ -33,6 +33,7 @@ In this data set, each row represents a city or town in Maryland with the 2010 a
 
 Background on this data from [Social Explorer](https://www.socialexplorer.com/data/ACS2016_5yr/metadata/?ds=ACS16_5yr&table=B02001) 
 ```{r}
+md_race <- read_csv("lab_04.csv")
 # Write code to load the Maryland race by city, place for 2010 - 2020 and call it md_race.
 # The data is called lab_03.csv, and is in the same folder as lab_03.qmd (this data notebook)
 
@@ -46,8 +47,14 @@ A1:
 ```{r}
 
 # Write your code in this codeblock.
+library(formattable) 
+top5_hispanic <- md_race %>% 
+  select(place, x2020_hispanic, x2020_total) %>% 
+  mutate(pct_hispanic = percent(x2020_hispanic/x2020_total)) %>% 
+slice_max(pct_hispanic, n=5) 
+view(top5_hispanic)
 
-
+#The top 5 cities with the largest Hispanic population as a percentage of the entire population in 2020 were Langley Park CDP (82.5%), Templeville town (77.6%), Marydel town (70.95%), Henderson town (63.69%), Edmonston town (60.9%).
 
 ```
 
@@ -57,9 +64,14 @@ A2:
 
 ```{r}
 #write your code here
-
-
-
+top_10_black <- md_race %>% 
+  select(place, x2010_black, x2010_total,x2020_black, x2020_total) %>% 
+  filter(x2010_total >=20000) %>% 
+  mutate(pct_black = percent(x2010_black/x2010_total)) %>% 
+  mutate(pct_black20 = percent(x2020_black/x2020_total)) %>% 
+slice_max(pct_black20,n=10)
+view(top_10_black)
+# The top 10 cities with the largest Black population filtered by places with more than a 20,000 population and sorted by results in 2020 are Suitland CDP, Milford Mills CDP, Clinton CDP, Lochearn CDP, Randallstown CDP, Landover CDP, South Laurel CDP, Baltimore City, Fort Washington CDP, and Waldorf CDP. I was surprised that there were five places with an 80% or higher population, and I thought it was interesting that there were slight fluctuations in percentages between 2010 and 2020. For example, Suitland CDP was 92.35% Black in 2010 and 87.65% Black in 2020. 
 ```
 
 Q3: Find the 15 communities that had the great gains in Hispanic population from 2010 to 2020 as measured by percentage change. Also calculate percentage change for the community's overall growth during the same period. Filter your results for communities with more than 10,000 people as of 2020. Your results will be hisp_growth. Look at your results, craft a one-paragraph story pitch for your editor. 
@@ -67,7 +79,12 @@ Q3: Find the 15 communities that had the great gains in Hispanic population from
 A3:
 
 ```{r}
+hisp_growth <- md_race %>% 
+  select(place,x2020_total,x2020_hispanic,x2010_total,x2010_hispanic) %>% 
+  filter(x2020_total >= 10000) %>% 
+  mutate(hispanic_pct_change = ((x2020_hispanic-x2010_hispanic)/x2010_hispanic)) %>% 
+   mutate(overall_pct_change = ((x2020_total-x2010_total)/x2010_total)) %>% 
+  slice_max(hispanic_pct_change, n=15)
+view(hisp_growth)
 
-
-
-```
+# My story would be focused on North Laurel CDP - as it has had an overall population boom between 2010 and 2020 - of 5.1%. It also had the largest positive percentage change of the hispanic population for communities with more than 10,000 people as of 2020. I would be interested in looking into why the population is growing - are there new home developments/ jobs that are opening in the area that are attracting this boom in population. I'm also curious to see why there is such a large hispanic boom as well - are there communities or resources in the area that are attracting this demographic? I would 
