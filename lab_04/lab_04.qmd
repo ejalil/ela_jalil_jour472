@@ -88,3 +88,11 @@ hisp_growth <- md_race %>%
 view(hisp_growth)
 
 # My story would be focused on North Laurel CDP - as it has had an overall population boom between 2010 and 2020 - of 5.1%. It also had the largest positive percentage change of the hispanic population for communities with more than 10,000 people as of 2020. I would be interested in looking into why the population is growing - are there new home developments/ jobs that are opening in the area that are attracting this boom in population. I'm also curious to see why there is such a large hispanic boom as well - are there communities or resources in the area that are attracting this demographic? I would reach out to county executive Calvin Ball, for more information on demographic changes in Howard County. I would also go into North Laurel to interview members of the Hispanic community to see their motivations in moving into the area. 
+
+```
+
+```{r}
+scales::percent(1/5)
+hisp_growth %>% 
+tail(hisp_growth)
+```
