@@ -1,0 +1,163 @@
+ID Race,Race,ID Year,Year,ID Poverty Status,Poverty Status,Poverty Population,Poverty Population Moe,Geography,ID Geography,Slug Geography,share,Sex,ID Sex
+1,White,2021,2021,0,Income In The Past 12 Months Below Poverty Level,8980,750.390565,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06423691834,Male,0
+1,White,2021,2021,0,Income In The Past 12 Months Below Poverty Level,10905,738.1768081,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0780070818,Female,1
+2,Black,2021,2021,0,Income In The Past 12 Months Below Poverty Level,37591,1797.898495,"Baltimore city, MD",05000US24510,baltimore-city-md,0.2689008906,Male,0
+2,Black,2021,2021,0,Income In The Past 12 Months Below Poverty Level,48617,1875.897119,"Baltimore city, MD",05000US24510,baltimore-city-md,0.3477735255,Female,1
+3,Native American,2021,2021,0,Income In The Past 12 Months Below Poverty Level,114,113.6045774,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0008154798097,Male,0
+3,Native American,2021,2021,0,Income In The Past 12 Months Below Poverty Level,283,152.7416119,"Baltimore city, MD",05000US24510,baltimore-city-md,0.002024392861,Female,1
+4,Asian,2021,2021,0,Income In The Past 12 Months Below Poverty Level,1085,250.1759381,"Baltimore city, MD",05000US24510,baltimore-city-md,0.007761364856,Male,0
+4,Asian,2021,2021,0,Income In The Past 12 Months Below Poverty Level,1499,289.1366459,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01072284416,Female,1
+5,Pacific Islander,2021,2021,0,Income In The Past 12 Months Below Poverty Level,0,111.7720895,"Baltimore city, MD",05000US24510,baltimore-city-md,0,Male,0
+5,Pacific Islander,2021,2021,0,Income In The Past 12 Months Below Poverty Level,11,99.2975327,"Baltimore city, MD",05000US24510,baltimore-city-md,0.00007868664831,Female,1
+6,Other,2021,2021,0,Income In The Past 12 Months Below Poverty Level,1629,443.094798,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01165277728,Male,0
+6,Other,2021,2021,0,Income In The Past 12 Months Below Poverty Level,1426,307.8116307,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01020065095,Female,1
+7,Two Or More,2021,2021,0,Income In The Past 12 Months Below Poverty Level,1733,354.8802615,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01239672377,Male,0
+7,Two Or More,2021,2021,0,Income In The Past 12 Months Below Poverty Level,1875,373.1527837,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01341249687,Female,1
+8,White Non-Hispanic,2021,2021,0,Income In The Past 12 Months Below Poverty Level,8216,712.2738238,"Baltimore city, MD",05000US24510,baltimore-city-md,0.05877177295,Male,0
+8,White Non-Hispanic,2021,2021,0,Income In The Past 12 Months Below Poverty Level,9746,710.2950091,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0697163704,Female,1
+9,Hispanic,2021,2021,0,Income In The Past 12 Months Below Poverty Level,2709,502.6758399,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01937837548,Male,0
+9,Hispanic,2021,2021,0,Income In The Past 12 Months Below Poverty Level,3376,484.5915806,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0241496477,Female,1
+1,White,2020,2020,0,Income In The Past 12 Months Below Poverty Level,9204,710.6180409,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06579079043,Male,0
+1,White,2020,2020,0,Income In The Past 12 Months Below Poverty Level,11326,781.6616915,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0809589844,Female,1
+2,Black,2020,2020,0,Income In The Past 12 Months Below Poverty Level,38385,1705.941969,"Baltimore city, MD",05000US24510,baltimore-city-md,0.2743784757,Male,0
+2,Black,2020,2020,0,Income In The Past 12 Months Below Poverty Level,49682,1738.01496,"Baltimore city, MD",05000US24510,baltimore-city-md,0.3551301663,Female,1
+3,Native American,2020,2020,0,Income In The Past 12 Months Below Poverty Level,189,125.713961,"Baltimore city, MD",05000US24510,baltimore-city-md,0.001350984289,Male,0
+3,Native American,2020,2020,0,Income In The Past 12 Months Below Poverty Level,362,161.9845672,"Baltimore city, MD",05000US24510,baltimore-city-md,0.002587599537,Female,1
+4,Asian,2020,2020,0,Income In The Past 12 Months Below Poverty Level,999,252.0535657,"Baltimore city, MD",05000US24510,baltimore-city-md,0.007140916954,Male,0
+4,Asian,2020,2020,0,Income In The Past 12 Months Below Poverty Level,1445,241.4663538,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01032895395,Female,1
+5,Pacific Islander,2020,2020,0,Income In The Past 12 Months Below Poverty Level,29,104.2497002,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0002072938855,Male,0
+5,Pacific Islander,2020,2020,0,Income In The Past 12 Months Below Poverty Level,30,104.7520883,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0002144419506,Female,1
+6,Other,2020,2020,0,Income In The Past 12 Months Below Poverty Level,1025,330.2196239,"Baltimore city, MD",05000US24510,baltimore-city-md,0.007326766644,Male,0
+6,Other,2020,2020,0,Income In The Past 12 Months Below Poverty Level,1077,253.7084941,"Baltimore city, MD",05000US24510,baltimore-city-md,0.007698466025,Female,1
+7,Two Or More,2020,2020,0,Income In The Past 12 Months Below Poverty Level,996,253.9094327,"Baltimore city, MD",05000US24510,baltimore-city-md,0.007119472759,Male,0
+7,Two Or More,2020,2020,0,Income In The Past 12 Months Below Poverty Level,1509,337.6773608,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01078643011,Female,1
+8,White Non-Hispanic,2020,2020,0,Income In The Past 12 Months Below Poverty Level,7988,648.2777183,"Baltimore city, MD",05000US24510,baltimore-city-md,0.05709874337,Male,0
+8,White Non-Hispanic,2020,2020,0,Income In The Past 12 Months Below Poverty Level,9759,709.3673237,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06975796652,Female,1
+9,Hispanic,2020,2020,0,Income In The Past 12 Months Below Poverty Level,2555,455.4459353,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01826330612,Male,0
+9,Hispanic,2020,2020,0,Income In The Past 12 Months Below Poverty Level,3338,528.9291068,"Baltimore city, MD",05000US24510,baltimore-city-md,0.02386024103,Female,1
+1,White,2019,2019,0,Income In The Past 12 Months Below Poverty Level,10235,732.6540794,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06827247622,Male,0
+1,White,2019,2019,0,Income In The Past 12 Months Below Poverty Level,11957,715.86102,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07975906186,Female,1
+2,Black,2019,2019,0,Income In The Past 12 Months Below Poverty Level,39984,1515.252784,"Baltimore city, MD",05000US24510,baltimore-city-md,0.2667129154,Male,0
+2,Black,2019,2019,0,Income In The Past 12 Months Below Poverty Level,54073,1689.449615,"Baltimore city, MD",05000US24510,baltimore-city-md,0.3606934643,Female,1
+3,Native American,2019,2019,0,Income In The Past 12 Months Below Poverty Level,258,143.2131279,"Baltimore city, MD",05000US24510,baltimore-city-md,0.001720986699,Male,0
+3,Native American,2019,2019,0,Income In The Past 12 Months Below Poverty Level,326,144.3225554,"Baltimore city, MD",05000US24510,baltimore-city-md,0.002174580093,Female,1
+4,Asian,2019,2019,0,Income In The Past 12 Months Below Poverty Level,1212,282.015957,"Baltimore city, MD",05000US24510,baltimore-city-md,0.008084635191,Male,0
+4,Asian,2019,2019,0,Income In The Past 12 Months Below Poverty Level,1573,251.6624724,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01049268247,Female,1
+5,Pacific Islander,2019,2019,0,Income In The Past 12 Months Below Poverty Level,38,101.7889974,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0002534786611,Male,0
+5,Pacific Islander,2019,2019,0,Income In The Past 12 Months Below Poverty Level,22,94.74703162,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0001467508038,Female,1
+6,Other,2019,2019,0,Income In The Past 12 Months Below Poverty Level,1255,368.3259426,"Baltimore city, MD",05000US24510,baltimore-city-md,0.008371466307,Male,0
+6,Other,2019,2019,0,Income In The Past 12 Months Below Poverty Level,1298,293.0204771,"Baltimore city, MD",05000US24510,baltimore-city-md,0.008658297424,Female,1
+7,Two Or More,2019,2019,0,Income In The Past 12 Months Below Poverty Level,924,213.2439917,"Baltimore city, MD",05000US24510,baltimore-city-md,0.006163533759,Male,0
+7,Two Or More,2019,2019,0,Income In The Past 12 Months Below Poverty Level,1281,282.3632412,"Baltimore city, MD",05000US24510,baltimore-city-md,0.008544899075,Female,1
+8,White Non-Hispanic,2019,2019,0,Income In The Past 12 Months Below Poverty Level,8626,625.0519978,"Baltimore city, MD",05000US24510,baltimore-city-md,0.05753965607,Male,0
+8,White Non-Hispanic,2019,2019,0,Income In The Past 12 Months Below Poverty Level,9781,610.969721,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06524407327,Female,1
+9,Hispanic,2019,2019,0,Income In The Past 12 Months Below Poverty Level,3102,479.124201,"Baltimore city, MD",05000US24510,baltimore-city-md,0.02069186333,Male,0
+9,Hispanic,2019,2019,0,Income In The Past 12 Months Below Poverty Level,3969,493.8714408,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0264751791,Female,1
+1,White,2018,2018,0,Income In The Past 12 Months Below Poverty Level,11200,771.5672362,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07207995727,Male,0
+1,White,2018,2018,0,Income In The Past 12 Months Below Poverty Level,12423,740.0155404,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07995083117,Female,1
+2,Black,2018,2018,0,Income In The Past 12 Months Below Poverty Level,41381,1432.66116,"Baltimore city, MD",05000US24510,baltimore-city-md,0.266316135,Male,0
+2,Black,2018,2018,0,Income In The Past 12 Months Below Poverty Level,55432,1582.751718,"Baltimore city, MD",05000US24510,baltimore-city-md,0.3567443028,Female,1
+3,Native American,2018,2018,0,Income In The Past 12 Months Below Poverty Level,331,171.0467772,"Baltimore city, MD",05000US24510,baltimore-city-md,0.002130220166,Male,0
+3,Native American,2018,2018,0,Income In The Past 12 Months Below Poverty Level,322,145.4097658,"Baltimore city, MD",05000US24510,baltimore-city-md,0.002072298771,Female,1
+4,Asian,2018,2018,0,Income In The Past 12 Months Below Poverty Level,1218,292.0958747,"Baltimore city, MD",05000US24510,baltimore-city-md,0.007838695353,Male,0
+4,Asian,2018,2018,0,Income In The Past 12 Months Below Poverty Level,1569,243.7867921,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01009762973,Female,1
+5,Pacific Islander,2018,2018,0,Income In The Past 12 Months Below Poverty Level,48,108.2081328,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0003089141026,Male,0
+5,Pacific Islander,2018,2018,0,Income In The Past 12 Months Below Poverty Level,21,94.49338601,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0001351499199,Female,1
+6,Other,2018,2018,0,Income In The Past 12 Months Below Poverty Level,1033,302.9471901,"Baltimore city, MD",05000US24510,baltimore-city-md,0.006648088916,Male,0
+6,Other,2018,2018,0,Income In The Past 12 Months Below Poverty Level,1180,248.3002215,"Baltimore city, MD",05000US24510,baltimore-city-md,0.007594138355,Female,1
+7,Two Or More,2018,2018,0,Income In The Past 12 Months Below Poverty Level,1200,267.3219033,"Baltimore city, MD",05000US24510,baltimore-city-md,0.007722852564,Male,0
+7,Two Or More,2018,2018,0,Income In The Past 12 Months Below Poverty Level,1471,291.6539045,"Baltimore city, MD",05000US24510,baltimore-city-md,0.009466930102,Female,1
+8,White Non-Hispanic,2018,2018,0,Income In The Past 12 Months Below Poverty Level,9463,683.997807,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06090112818,Male,0
+8,White Non-Hispanic,2018,2018,0,Income In The Past 12 Months Below Poverty Level,10290,660.550528,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06622346074,Female,1
+9,Hispanic,2018,2018,0,Income In The Past 12 Months Below Poverty Level,3045,452.188014,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01959673838,Male,0
+9,Hispanic,2018,2018,0,Income In The Past 12 Months Below Poverty Level,3756,439.9420416,"Baltimore city, MD",05000US24510,baltimore-city-md,0.02417252853,Female,1
+1,White,2017,2017,0,Income In The Past 12 Months Below Poverty Level,11890,776.9259939,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07329959127,Male,0
+1,White,2017,2017,0,Income In The Past 12 Months Below Poverty Level,12637,735.6187871,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07790470437,Female,1
+2,Black,2017,2017,0,Income In The Past 12 Months Below Poverty Level,42380,1442.335606,"Baltimore city, MD",05000US24510,baltimore-city-md,0.2612646491,Male,0
+2,Black,2017,2017,0,Income In The Past 12 Months Below Poverty Level,57283,1550.25643,"Baltimore city, MD",05000US24510,baltimore-city-md,0.353138813,Female,1
+3,Native American,2017,2017,0,Income In The Past 12 Months Below Poverty Level,318,146.6424222,"Baltimore city, MD",05000US24510,baltimore-city-md,0.00196040959,Male,0
+3,Native American,2017,2017,0,Income In The Past 12 Months Below Poverty Level,492,196.669774,"Baltimore city, MD",05000US24510,baltimore-city-md,0.003033086535,Female,1
+4,Asian,2017,2017,0,Income In The Past 12 Months Below Poverty Level,1402,297.8556697,"Baltimore city, MD",05000US24510,baltimore-city-md,0.008643063664,Male,0
+4,Asian,2017,2017,0,Income In The Past 12 Months Below Poverty Level,1668,301.9801318,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01028290313,Female,1
+5,Pacific Islander,2017,2017,0,Income In The Past 12 Months Below Poverty Level,67,105.5698821,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0004130422721,Male,0
+5,Pacific Islander,2017,2017,0,Income In The Past 12 Months Below Poverty Level,36,99.45853407,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0002219331611,Female,1
+6,Other,2017,2017,0,Income In The Past 12 Months Below Poverty Level,1324,334.0928015,"Baltimore city, MD",05000US24510,baltimore-city-md,0.008162208482,Male,0
+6,Other,2017,2017,0,Income In The Past 12 Months Below Poverty Level,1643,326.0904782,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01012878288,Female,1
+7,Two Or More,2017,2017,0,Income In The Past 12 Months Below Poverty Level,1131,253.6651336,"Baltimore city, MD",05000US24510,baltimore-city-md,0.006972400145,Male,0
+7,Two Or More,2017,2017,0,Income In The Past 12 Months Below Poverty Level,1522,294.7303853,"Baltimore city, MD",05000US24510,baltimore-city-md,0.009382840868,Female,1
+8,White Non-Hispanic,2017,2017,0,Income In The Past 12 Months Below Poverty Level,10165,670.973919,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06266529397,Male,0
+8,White Non-Hispanic,2017,2017,0,Income In The Past 12 Months Below Poverty Level,10651,637.0635761,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06566139164,Female,1
+9,Hispanic,2017,2017,0,Income In The Past 12 Months Below Poverty Level,3424,461.6882065,"Baltimore city, MD",05000US24510,baltimore-city-md,0.02110830955,Male,0
+9,Hispanic,2017,2017,0,Income In The Past 12 Months Below Poverty Level,4178,475.2588768,"Baltimore city, MD",05000US24510,baltimore-city-md,0.02575657631,Female,1
+1,White,2016,2016,0,Income In The Past 12 Months Below Poverty Level,11885,774.7728699,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07158301763,Male,0
+1,White,2016,2016,0,Income In The Past 12 Months Below Poverty Level,12475,712.6766448,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07513657088,Female,1
+2,Black,2016,2016,0,Income In The Past 12 Months Below Poverty Level,44330,1467.322391,"Baltimore city, MD",05000US24510,baltimore-city-md,0.2669983316,Male,0
+2,Black,2016,2016,0,Income In The Past 12 Months Below Poverty Level,59954,1457.380184,"Baltimore city, MD",05000US24510,baltimore-city-md,0.3611012401,Female,1
+3,Native American,2016,2016,0,Income In The Past 12 Months Below Poverty Level,308,146.812806,"Baltimore city, MD",05000US24510,baltimore-city-md,0.001855075257,Male,0
+3,Native American,2016,2016,0,Income In The Past 12 Months Below Poverty Level,406,203.1354228,"Baltimore city, MD",05000US24510,baltimore-city-md,0.002445326475,Female,1
+4,Asian,2016,2016,0,Income In The Past 12 Months Below Poverty Level,1271,267.3069397,"Baltimore city, MD",05000US24510,baltimore-city-md,0.007655196921,Male,0
+4,Asian,2016,2016,0,Income In The Past 12 Months Below Poverty Level,1501,264.6866071,"Baltimore city, MD",05000US24510,baltimore-city-md,0.009040480392,Female,1
+5,Pacific Islander,2016,2016,0,Income In The Past 12 Months Below Poverty Level,64,108.0092589,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0003854701833,Male,0
+5,Pacific Islander,2016,2016,0,Income In The Past 12 Months Below Poverty Level,38,102.7813213,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0002288729213,Female,1
+6,Other,2016,2016,0,Income In The Past 12 Months Below Poverty Level,1271,299.1337493,"Baltimore city, MD",05000US24510,baltimore-city-md,0.007655196921,Male,0
+6,Other,2016,2016,0,Income In The Past 12 Months Below Poverty Level,1784,344.9115829,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01074498136,Female,1
+7,Two Or More,2016,2016,0,Income In The Past 12 Months Below Poverty Level,1158,242.2890835,"Baltimore city, MD",05000US24510,baltimore-city-md,0.006974601129,Male,0
+7,Two Or More,2016,2016,0,Income In The Past 12 Months Below Poverty Level,1519,262.1602563,"Baltimore city, MD",05000US24510,baltimore-city-md,0.009148893881,Female,1
+8,White Non-Hispanic,2016,2016,0,Income In The Past 12 Months Below Poverty Level,10370,708.8906827,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06245821563,Male,0
+8,White Non-Hispanic,2016,2016,0,Income In The Past 12 Months Below Poverty Level,10858,652.1502894,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06539742578,Female,1
+9,Hispanic,2016,2016,0,Income In The Past 12 Months Below Poverty Level,3203,416.5009004,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01929157808,Male,0
+9,Hispanic,2016,2016,0,Income In The Past 12 Months Below Poverty Level,3636,414.1750838,"Baltimore city, MD",05000US24510,baltimore-city-md,0.02189952479,Female,1
+1,White,2015,2015,0,Income In The Past 12 Months Below Poverty Level,12114,798.5036005,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0709720131,Male,0
+1,White,2015,2015,0,Income In The Past 12 Months Below Poverty Level,12803,738.7272839,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07500864155,Female,1
+2,Black,2015,2015,0,Income In The Past 12 Months Below Poverty Level,45396,1460.549212,"Baltimore city, MD",05000US24510,baltimore-city-md,0.2659605008,Male,0
+2,Black,2015,2015,0,Income In The Past 12 Months Below Poverty Level,61082,1569.049394,"Baltimore city, MD",05000US24510,baltimore-city-md,0.3578597081,Female,1
+3,Native American,2015,2015,0,Income In The Past 12 Months Below Poverty Level,215,137.0364915,"Baltimore city, MD",05000US24510,baltimore-city-md,0.001259615554,Male,0
+3,Native American,2015,2015,0,Income In The Past 12 Months Below Poverty Level,433,202.640075,"Baltimore city, MD",05000US24510,baltimore-city-md,0.002536807138,Female,1
+4,Asian,2015,2015,0,Income In The Past 12 Months Below Poverty Level,1430,297.7482158,"Baltimore city, MD",05000US24510,baltimore-city-md,0.008377908101,Male,0
+4,Asian,2015,2015,0,Income In The Past 12 Months Below Poverty Level,1647,261.6371533,"Baltimore city, MD",05000US24510,baltimore-city-md,0.009649241008,Female,1
+5,Pacific Islander,2015,2015,0,Income In The Past 12 Months Below Poverty Level,0,100.9554357,"Baltimore city, MD",05000US24510,baltimore-city-md,0,Male,0
+5,Pacific Islander,2015,2015,0,Income In The Past 12 Months Below Poverty Level,26,99.14131329,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0001523256018,Female,1
+6,Other,2015,2015,0,Income In The Past 12 Months Below Poverty Level,1520,314.1321378,"Baltimore city, MD",05000US24510,baltimore-city-md,0.00890518903,Male,0
+6,Other,2015,2015,0,Income In The Past 12 Months Below Poverty Level,1828,309.7063125,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01070966154,Female,1
+7,Two Or More,2015,2015,0,Income In The Past 12 Months Below Poverty Level,1458,263.9564358,"Baltimore city, MD",05000US24510,baltimore-city-md,0.008541951057,Male,0
+7,Two Or More,2015,2015,0,Income In The Past 12 Months Below Poverty Level,1702,292.2019849,"Baltimore city, MD",05000US24510,baltimore-city-md,0.009971468243,Female,1
+8,White Non-Hispanic,2015,2015,0,Income In The Past 12 Months Below Poverty Level,10634,719.5352667,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06230117115,Male,0
+8,White Non-Hispanic,2015,2015,0,Income In The Past 12 Months Below Poverty Level,11475,701.8952913,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0672283185,Female,1
+9,Hispanic,2015,2015,0,Income In The Past 12 Months Below Poverty Level,3432,433.1477808,"Baltimore city, MD",05000US24510,baltimore-city-md,0.02010697944,Male,0
+9,Hispanic,2015,2015,0,Income In The Past 12 Months Below Poverty Level,3492,389.5009628,"Baltimore city, MD",05000US24510,baltimore-city-md,0.02045850006,Female,1
+1,White,2014,2014,0,Income In The Past 12 Months Below Poverty Level,12761,872.4666183,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07270148012,Male,0
+1,White,2014,2014,0,Income In The Past 12 Months Below Poverty Level,13779,806.0719571,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07850119071,Female,1
+2,Black,2014,2014,0,Income In The Past 12 Months Below Poverty Level,45957,1463.224863,"Baltimore city, MD",05000US24510,baltimore-city-md,0.2618244591,Male,0
+2,Black,2014,2014,0,Income In The Past 12 Months Below Poverty Level,61592,1663.91977,"Baltimore city, MD",05000US24510,baltimore-city-md,0.3508995818,Female,1
+3,Native American,2014,2014,0,Income In The Past 12 Months Below Poverty Level,368,172.8988143,"Baltimore city, MD",05000US24510,baltimore-city-md,0.002096555496,Male,0
+3,Native American,2014,2014,0,Income In The Past 12 Months Below Poverty Level,481,225.8273677,"Baltimore city, MD",05000US24510,baltimore-city-md,0.002740334765,Female,1
+4,Asian,2014,2014,0,Income In The Past 12 Months Below Poverty Level,1629,311.3310136,"Baltimore city, MD",05000US24510,baltimore-city-md,0.009280676367,Male,0
+4,Asian,2014,2014,0,Income In The Past 12 Months Below Poverty Level,1688,265.0132072,"Baltimore city, MD",05000US24510,baltimore-city-md,0.009616808906,Female,1
+5,Pacific Islander,2014,2014,0,Income In The Past 12 Months Below Poverty Level,0,100.9554357,"Baltimore city, MD",05000US24510,baltimore-city-md,0,Male,0
+5,Pacific Islander,2014,2014,0,Income In The Past 12 Months Below Poverty Level,23,97.50897395,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0001310347185,Female,1
+6,Other,2014,2014,0,Income In The Past 12 Months Below Poverty Level,1361,296.9461231,"Baltimore city, MD",05000US24510,baltimore-city-md,0.007753837038,Male,0
+6,Other,2014,2014,0,Income In The Past 12 Months Below Poverty Level,1546,291.1511635,"Baltimore city, MD",05000US24510,baltimore-city-md,0.008807811948,Female,1
+7,Two Or More,2014,2014,0,Income In The Past 12 Months Below Poverty Level,1598,297.8338463,"Baltimore city, MD",05000US24510,baltimore-city-md,0.009104064355,Male,0
+7,Two Or More,2014,2014,0,Income In The Past 12 Months Below Poverty Level,2066,348.7205185,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01177033602,Female,1
+8,White Non-Hispanic,2014,2014,0,Income In The Past 12 Months Below Poverty Level,11427,796.6310313,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06510146645,Male,0
+8,White Non-Hispanic,2014,2014,0,Income In The Past 12 Months Below Poverty Level,12505,754.4759771,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07124300673,Female,1
+9,Hispanic,2014,2014,0,Income In The Past 12 Months Below Poverty Level,3202,454.9967033,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01824231168,Male,0
+9,Hispanic,2014,2014,0,Income In The Past 12 Months Below Poverty Level,3543,402.8920451,"Baltimore city, MD",05000US24510,baltimore-city-md,0.02018504381,Female,1
+1,White,2013,2013,0,Income In The Past 12 Months Below Poverty Level,12453,812.5496908,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07212607729,Male,0
+1,White,2013,2013,0,Income In The Past 12 Months Below Poverty Level,13794,812.9809346,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07989296636,Female,1
+2,Black,2013,2013,0,Income In The Past 12 Months Below Poverty Level,44555,1619.743807,"Baltimore city, MD",05000US24510,baltimore-city-md,0.2580564823,Male,0
+2,Black,2013,2013,0,Income In The Past 12 Months Below Poverty Level,60110,1679.692234,"Baltimore city, MD",05000US24510,baltimore-city-md,0.3481489204,Female,1
+3,Native American,2013,2013,0,Income In The Past 12 Months Below Poverty Level,258,125.1439172,"Baltimore city, MD",05000US24510,baltimore-city-md,0.001494300806,Male,0
+3,Native American,2013,2013,0,Income In The Past 12 Months Below Poverty Level,417,159.6370884,"Baltimore city, MD",05000US24510,baltimore-city-md,0.002415207117,Female,1
+4,Asian,2013,2013,0,Income In The Past 12 Months Below Poverty Level,1868,372.7411971,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01081920119,Male,0
+4,Asian,2013,2013,0,Income In The Past 12 Months Below Poverty Level,1816,303.2243394,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01051802428,Female,1
+5,Pacific Islander,2013,2013,0,Income In The Past 12 Months Below Poverty Level,0,104.560987,"Baltimore city, MD",05000US24510,baltimore-city-md,0,Male,0
+5,Pacific Islander,2013,2013,0,Income In The Past 12 Months Below Poverty Level,36,99.18165153,"Baltimore city, MD",05000US24510,baltimore-city-md,0.0002085070892,Female,1
+6,Other,2013,2013,0,Income In The Past 12 Months Below Poverty Level,1499,333.8442751,"Baltimore city, MD",05000US24510,baltimore-city-md,0.008682003521,Male,0
+6,Other,2013,2013,0,Income In The Past 12 Months Below Poverty Level,1589,274.4066326,"Baltimore city, MD",05000US24510,baltimore-city-md,0.009203271245,Female,1
+7,Two Or More,2013,2013,0,Income In The Past 12 Months Below Poverty Level,1842,347.157025,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01066861273,Male,0
+7,Two Or More,2013,2013,0,Income In The Past 12 Months Below Poverty Level,1925,311.7899934,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01114933741,Female,1
+8,White Non-Hispanic,2013,2013,0,Income In The Past 12 Months Below Poverty Level,11205,742.8115508,"Baltimore city, MD",05000US24510,baltimore-city-md,0.06489783153,Male,0
+8,White Non-Hispanic,2013,2013,0,Income In The Past 12 Months Below Poverty Level,12500,766.640072,"Baltimore city, MD",05000US24510,baltimore-city-md,0.07239829488,Female,1
+9,Hispanic,2013,2013,0,Income In The Past 12 Months Below Poverty Level,3234,433.5850551,"Baltimore city, MD",05000US24510,baltimore-city-md,0.01873088685,Male,0
+9,Hispanic,2013,2013,0,Income In The Past 12 Months Below Poverty Level,3555,392.2639418,"Baltimore city, MD",05000US24510,baltimore-city-md,0.02059007506,Female,1

@@ -1,0 +1,48 @@
+Label (Grouping),Number,"Number, Margin of Error",Percent Distribution,"Percent Distribution, Margin of Error",Median income (dollars),"Maryland!!Median income (dollars), Margin of Error"
+HOUSEHOLD INCOME BY RACE AND HISPANIC OR LATINO ORIGIN OF HOUSEHOLDER,,,,,,
+    Households,"254,707","±3,507","254,707","±3,507","55,198","±2,901"
+        One race--,,,,,,
+            White,"78,219","±2,173",30.70%,±0.8,"85,027","±5,051"
+            Black or African American,"151,958","±3,551",59.70%,±0.9,"45,420","±2,781"
+            American Indian and Alaska Native,N,N,N,N,"40,753","±38,562"
+            Asian,"7,514",±789,3.00%,±0.3,"71,655","±18,397"
+            Native Hawaiian and Other Pacific Islander,N,N,N,N,-,**
+            Some other race,"7,551","±1,406",3.00%,±0.6,"48,745","±12,747"
+        Two or more races,"8,911","±1,791",3.50%,±0.7,"70,164","±20,792"
+        Hispanic or Latino origin (of any race),"10,370","±1,121",4.10%,±0.4,"60,030","±23,036"
+"        White alone, not Hispanic or Latino","76,283","±2,193",29.90%,±0.8,"85,625","±5,075"
+HOUSEHOLD INCOME BY AGE OF HOUSEHOLDER,,,,,,
+    15 to 24 years,"9,452","±1,769",3.70%,±0.7,"48,118","±16,730"
+    25 to 44 years,"101,324","±2,980",39.80%,±1.0,"64,559","±4,126"
+    45 to 64 years,"82,575","±2,714",32.40%,±1.0,"55,465","±4,322"
+    65 years and over,"61,356","±2,016",24.10%,±0.8,"41,761","±5,112"
+FAMILIES,,,,,,
+    Families,"121,876","±4,778","121,876","±4,778","69,089","±5,679"
+        With own children of householder under 18 years,"48,382","±3,155",39.70%,±2.1,"53,566","±7,035"
+        With no own children of householder under 18 years,"73,494","±3,813",60.30%,±2.1,"78,166","±5,212"
+        Married-couple families,"59,318","±4,052",48.70%,±2.9,"102,119","±7,250"
+            With own children under 18 years,"22,049","±2,692",18.10%,±2.2,"117,574","±12,692"
+"        Female householder, no spouse present","49,873","±3,895",40.90%,±2.6,"46,475","±3,582"
+            With own children under 18 years,"22,169","±3,129",18.20%,±2.3,"34,107","±3,632"
+"        Male householder, no spouse present","12,685","±2,458",10.40%,±2.0,"65,929","±15,468"
+            With own children under 18 years,"4,164","±1,270",3.40%,±1.0,"47,038","±12,942"
+FAMILY INCOME BY FAMILY SIZE,,,,,,
+    2-person families,"63,827","±5,000",52.40%,±2.9,"61,251","±5,430"
+    3-person families,"28,929","±2,978",23.70%,±2.4,"70,167","±12,213"
+    4-person families,"16,478","±2,594",13.50%,±2.2,"77,355","±14,834"
+    5-person families,"7,603","±1,795",6.20%,±1.5,"81,201","±30,936"
+    6-person families,"2,979","±1,142",2.40%,±0.9,"71,710","±29,572"
+    7-or-more person families,"2,060",±824,1.70%,±0.7,"85,799","±27,695"
+FAMILY INCOME BY NUMBER OF EARNERS,,,,,,
+    No earners,"18,435","±2,578",15.10%,±2.0,"26,679","±5,136"
+    1 earner,"46,929","±4,579",38.50%,±3.1,"47,314","±2,933"
+    2 earners,"47,599","±3,329",39.10%,±2.6,"108,726","±11,227"
+    3 or more earners,"8,913","±1,594",7.30%,±1.3,"142,649","±17,813"
+NONFAMILY HOUSEHOLDS,,,,,,
+    Nonfamily households,"132,831","±5,054","132,831","±5,054","41,671","±2,810"
+        Female householder,"72,479","±4,091",54.60%,±2.2,"38,918","±5,786"
+            Living alone,"61,670","±3,912",46.40%,±2.3,"31,651","±3,851"
+            Not living alone,"10,809","±1,786",8.10%,±1.3,"111,831","±12,982"
+        Male householder,"60,352","±3,654",45.40%,±2.2,"43,575","±4,788"
+            Living alone,"47,652","±3,351",35.90%,±2.3,"36,481","±6,557"
+            Not living alone,"12,700","±2,038",9.60%,±1.4,"100,480","±7,495"
