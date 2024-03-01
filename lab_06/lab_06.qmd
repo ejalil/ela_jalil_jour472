@@ -15,7 +15,9 @@ When you are finished, commit changes and push to your personal GitHub repo, the
 options(scipen=999)
 
 # Load the tidyverse,rvest,janitor
-
+library(tidyverse)
+library(rvest)
+library(janitor)
 ```
 
 
@@ -34,7 +36,20 @@ Write a headline and caption.
 ```{r}
 
 #your answer here
+ads1 <- read_csv("/Users/elajalil/Documents/GitHub/ela_jalil_jour472/lab_06/ncaa_athletic_dirs.csv") %>% 
+  as.data.frame()
+ads1_2021<-ads1 %>% 
+  as.data.frame() %>% 
+  filter(year==2021)
 
+ads1_2021 %>% 
+  ggplot(aes(x = race_sex, y = count)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Athletic Directors for the NCAA by Race and Sex", 
+       subtitle = "NCAA data: 2021",
+       caption = "Source: NCAA, Graphic by: Ela Jalil",
+       y="Count",
+       x="Sex and Race")
  
 
 ```
@@ -46,7 +61,14 @@ Write a headline and caption.
 
 ```{r}
 #your answer here  
-
+ads1 %>% 
+  ggplot(aes(x = year, y = count)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Number of Athletic Directors for the NCAA from 2012-2021", 
+       subtitle = "NCAA data, 2012-2021",
+       caption = "Source: NCAA, Graphic by: Ela Jalil",
+       y="Count",
+       x="Year")
 
 
 ```
@@ -68,6 +90,18 @@ Designate one line for each and a separate color: ie male_white would be blue, f
 ```{r}
 
 #your answer here
-
+sports_race <- read_csv('/Users/elajalil/Documents/GitHub/ela_jalil_jour472/lab_06/Sports_Race_ADs.csv', skip =1)
+  ggplot(sports_race,aes(x=Year)) +
+  geom_line(aes(y=`Male, White`), color="green")+
+    geom_line(aes(y=`Male, Black`), color="yellow")+
+    geom_line(aes(y=`Male, Other`), color="red")+
+    geom_line(aes(y=`Female, White`), color="orange")+
+    geom_line(aes(y= `Female, Black`), color="blue")+
+    geom_line(aes(y=`Female, Other`), color="black")+
+    labs(
+      title="NCAA Directors by Sex and Race",
+      x="Year",
+      y= "Sex and Race"
+    )
 
 ```
