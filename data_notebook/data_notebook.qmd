@@ -4,23 +4,109 @@ format: html
 editor: visual
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+Background:
 
 ```{r}
-1 + 1
+#The question that guided this data notebook is determining the amount of children living in poverty in Baltimore City, analyzing it along racial and geographic lines. I will be using three data sets for this project: one called baltcity_income_clean that gives the median household income of each neighborhood in Baltimore City. I will also be using black_population to help determine the Black population in each CSA of Baltimore City. 
 ```
 
-You can add options to executable code like this
+Library 
 
 ```{r}
-#| echo: false
-2 * 2
+#Loading libraries
+library(tidyverse)
+library(janitor)
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+1.  What is a summary of the median household income per neighborhood in Baltimore City?
+
+```{r}
+balt_income <- read_csv("baltcity_income_clean.csv")
+summary(balt_income)
+balt_income %>%
+  select(Neighborhood,x2020) %>% 
+  summarise(
+    count_tracts = n(),
+    x2020_median = median(x2020, na.rm=TRUE),
+    x2020_avg = mean(x2020, na.rm=TRUE),
+    min_2020 = min(x2020, na.rm=TRUE),
+    max_2020 = max(x2020, na.rm=TRUE)
+  ) 
+balt_income %>%
+  select(Neighborhood, x2020) %>% 
+  filter((x2020 ==13559) | (x2020==199531))
+#The code above determines the median, mean, minimum and maximum of the median household income of neighborhoods in Baltimore in 2020. The median is $49,875, the mean is $56,311.21, the minimum is $13,559 (which is associated with Upton/Druid Heights) and the maximum income is $199,531 (which is associated with North Baltimore/Guilford/Homeland). I will be looking at the racial makeup of these neighborhoods in later code. 
+
+```
+
+1.  How many neighborhoods in Baltimore City are below the poverty line? 
+
+```{r}
+#Based off of the assumption of the neighborhoods making up the median household income being within a four person family,two parents and two children,  with the poverty threshold being $26,200. This was determined by the Census poverty threshold for 2020. 
+filter_balt <- balt_income %>% 
+  filter(x2020 < 26200 )
+top5<- filter_balt %>% 
+slice_min(x2020, n=5)
+#Figure out what you're supposed to call y so that it works
+neighborhood_colors <- c("Upton/Druid Heights" = "red",
+                         "Sandtown-Winchester/Harlem Park" = "blue",
+                         "Southwest Baltimore" = "green",
+                         "Oldtown/Middle East" = "orange",
+                         "Cherry Hill" = "purple")
+top5 %>% 
+  ggplot(aes(x = Neighborhood, y = x2020, fill= Neighborhood)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Five Baltimore City Neighborhoods With the Lowest Median Household Income", 
+       subtitle = "Baltimore City data, 2010, 2016 ,2020",
+       caption = "Source: Baltimore City (JOUR472 Rob Wells), Graphic by: Ela Jalil",
+       y="Neighborhood",
+       x="Median Household Income")+
+  scale_fill_manual(values = neighborhood_colors)+
+  scale_y_continuous(breaks = seq(0, max(top5$x2020), by = 1000))
+
+
+#There are 19 neighborhoods in Baltimore City in 2020 that were below the poverty line. The five neighborhoods with the lowest household median income is Upton/ Druid Heights, Sandtown-Winchester/Harlem Park, Southwest Baltimore, Oldtown/Middle East, Cherry Hill. 
+#Make sure you upload the csv file
+#Create a data viz for this - could filter the race data
+#dispo, filter by a column "Upton/Druid Heights", "Sandtown-Winchester/Harlem Park"- check chapter 16 under Dispo section 
+```
+
+1.  What is the racial breakdown of children below the poverty line: ie percentage Black, white etc?
+
+```{r}
+dispo <- black_population %>%  
+  filter(CSA2010 %in% c("Upton/Druid Heights", "Sandtown-Winchester/Harlem Park", "Southwest Baltimore", "Oldtown/Middle East", "Cherry Hill")) 
+
+dispo <- dispo %>% 
+  select(paa20, CSA2010) %>% 
+  group_by(paa20, CSA2010) %>% 
+  count()
+
+dispo_pivot <- dispo %>% 
+  pivot_wider(names_from = CSA2010, values_from = n) %>% 
+  as.data.frame()
+#The five most impoverished neighborhoods in Baltimore City had a majority-Black population as of 2020. Sandtown-Winchester had a 92.5% Black population, Cherry Hill had a 89.1% Black population, Upton/Druid Heights had an 88% Black population, Oldtown/Middle East had a 77.5% Black population and Southwest Baltimore had a 75.2% Black population. 
+
+black
+
+
+#Should the way I do this is associate the most common race in an area to the most impoverished parts of Baltimore?
+#Run a median and average analysis for the neighborhoods 
+
+```
+
+/
+1.  What amount of children live below the poverty line in Baltimore City?
+
+```{r}
+
+
+```
+
+How does the poverty levels compare to Maryland and the United States?
+
+```{r}
+#import census data set that gives the poverty rate by race, age, and year from 1959 to 2022. 
+census_poverty <- read_csv("/Users/elajalil/Documents/GitHub/ela_jalil_jour472/data_notebook/census_poverty.csv")
+clean_census_poverty <- janitor::clean_names(census_poverty)
+```
