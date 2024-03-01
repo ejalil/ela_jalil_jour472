@@ -67,9 +67,10 @@ top5 %>%
 #There are 19 neighborhoods in Baltimore City in 2020 that were below the poverty line. The five neighborhoods with the lowest household median income is Upton/ Druid Heights ($13,559), Sandtown-Winchester/Harlem Park ($13,963), Southwest Baltimore ($14,269), Oldtown/Middle East ($14,304), Cherry Hill ($14,349). The chart that I created shows the five Baltimore City neighborhoods with the lowest median household income. It is evident in this table that these neighborhoods are well in the poverty threshold. 
 ```
 
-1.  What is the racial breakdown of children below the poverty line: ie percentage Black?
+1.  What is the Black population in the five neighborhoods with the lowest median household income?
 
 ```{r}
+black_population <- read_csv("black_population.csv")
 dispo <- black_population %>%  
   filter(CSA2010 %in% c("Upton/Druid Heights", "Sandtown-Winchester/Harlem Park", "Southwest Baltimore", "Oldtown/Middle East", "Cherry Hill")) 
 
@@ -87,17 +88,24 @@ dispo_pivot <- dispo %>%
 ```
 
 /
-1.  What amount of children live below the poverty line in Baltimore City?
+1.  What is the child poverty rate in those 5 neighborhoods?
 
 ```{r}
+poverty_child <- read_csv("poverty_baltimore.csv")
+filter_poverty <- poverty_child %>% 
+  select(CSA2020, hhchpov20)
+dispo_poverty <- filter_poverty %>%  
+  filter(CSA2020 %in% c("Upton/Druid Heights", "Sandtown-Winchester/Harlem Park", "Southwest Baltimore", "Oldtown/Middle East", "Cherry Hill"))
 
+dispo_poverty <- dispo_poverty %>% 
+  select(hhchpov20, CSA2020) %>% 
+  group_by(hhchpov20, CSA2020) %>% 
+  count()
 
+dispo_pivot_poverty <- dispo_poverty %>% 
+  pivot_wider(names_from = CSA2020, values_from = n) %>% 
+  as.data.frame()
+#The five neighborhoods in Baltimore City that have the lowest household income and are below the 2020 poverty rate also have relatively high rates of childhood poverty. Oldtown/Middle East is the only neighborhood without a majority percentage of childhood poverty (48.6%), with Cherry Hill having a 51.2% childhood poverty rate, Southwest Baltimore having a 55.5% childhood poverty rate, Sandtown-Winchester/Harlem Park having a 60.5% childhood poverty rate, and Upton/Druid Heights having a 69.8% childhood poverty rate. 
 ```
 
-How does the poverty levels compare to Maryland and the United States?
 
-```{r}
-#import census data set that gives the poverty rate by race, age, and year from 1959 to 2022. 
-census_poverty <- read_csv("/Users/elajalil/Documents/GitHub/ela_jalil_jour472/data_notebook/census_poverty.csv")
-clean_census_poverty <- janitor::clean_names(census_poverty)
-```
