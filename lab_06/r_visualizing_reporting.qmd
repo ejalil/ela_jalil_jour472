@@ -251,7 +251,7 @@ dispo <- SF %>%
   filter(disposition == c("CAN", "CIT", "ADM"))
 
 dispo <- dispo %>% 
-  select(year, disposition) %>% 
+  select(year, disposition) %>%  
   group_by(year) %>% 
   count(disposition)
 
