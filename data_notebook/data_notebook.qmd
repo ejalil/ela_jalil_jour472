@@ -7,7 +7,7 @@ editor: visual
 Background:
 
 ```{r}
-#The question that guided this data notebook is determining the amount of children living in poverty in Baltimore City, analyzing it along racial and geographic lines. I will be using two data sets for this project: one called baltcity_income_clean that gives the median household income of each neighborhood in Baltimore City. I will also be using black_population to help determine the Black population in each CSA of Baltimore City. 
+#The question that guided this data notebook is determining the amount of children living in poverty in Baltimore City, analyzing it along racial and geographic lines. I will be using two data sets for this project: one called baltcity_income_clean that gives the median household income of each neighborhood in Baltimore City. I will also be using black_population to help determine the Black population in each CSA of Baltimore City. #These data sets were cleaned from US Census data. The US Census Bureau conducts a study every 10 years which counts every resident in the United States, with the most recent one being in 2020. 
 ```
 
 Library
@@ -64,12 +64,13 @@ top5 %>%
   scale_y_continuous(breaks = seq(0, max(top5$x2020), by = 1000))
 
 
-#There are 19 neighborhoods in Baltimore City in 2020 that were below the poverty line. The five neighborhoods with the lowest household median income is Upton/ Druid Heights ($13,559), Sandtown-Winchester/Harlem Park ($13,963), Southwest Baltimore ($14,269), Oldtown/Middle East ($14,304), Cherry Hill ($14,349). The chart that I created shows the five Baltimore City neighborhoods with the lowest median household income. It is evident in this table that these neighborhoods are well in the poverty threshold. 
+#For additional context for these five neighborhoods,there are 19 neighborhoods in Baltimore City in 2020 that were below the poverty line. The five neighborhoods with the lowest household median income is Upton/ Druid Heights ($13,559), Sandtown-Winchester/Harlem Park ($13,963), Southwest Baltimore ($14,269), Oldtown/Middle East ($14,304), Cherry Hill ($14,349). The chart that I created shows the five Baltimore City neighborhoods with the lowest median household income. It is evident in this table that these neighborhoods are well in the poverty threshold. 
 ```
 
 1.  \[What is the Black population in the five neighborhoods with the lowest median household income?
 
 ```{r}
+#wrap headline
 black_population <- read_csv("black_population.csv")
 dispo <- black_population %>%  
   filter(CSA2010 %in% c("Upton/Druid Heights", "Sandtown-Winchester/Harlem Park", "Southwest Baltimore", "Oldtown/Middle East", "Cherry Hill")) 
@@ -82,7 +83,7 @@ ggplot(dispo, aes(x = CSA2010, y = paa20, fill = paa20)) +
   coord_flip() +
   geom_text(aes(label = paa20), hjust = -0.1, size = 2.5) +
   labs(
-    title = "Percentage Black population in poorest Baltimore neighborhoods",
+    title = str_wrap("Percentage Black population in poorest Baltimore neighborhoods",width=40),
     x = "Neighborhoods",
     y = "Percentage Black Population",
     caption = "Source: US Census Data"
