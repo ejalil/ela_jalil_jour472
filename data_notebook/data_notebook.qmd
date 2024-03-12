@@ -10,7 +10,7 @@ Background:
 #The question that guided this data notebook is determining the amount of children living in poverty in Baltimore City, analyzing it along racial and geographic lines. I will be using two data sets for this project: one called baltcity_income_clean that gives the median household income of each neighborhood in Baltimore City. I will also be using black_population to help determine the Black population in each CSA of Baltimore City. 
 ```
 
-Library 
+Library
 
 ```{r}
 #Loading libraries
@@ -67,7 +67,7 @@ top5 %>%
 #There are 19 neighborhoods in Baltimore City in 2020 that were below the poverty line. The five neighborhoods with the lowest household median income is Upton/ Druid Heights ($13,559), Sandtown-Winchester/Harlem Park ($13,963), Southwest Baltimore ($14,269), Oldtown/Middle East ($14,304), Cherry Hill ($14,349). The chart that I created shows the five Baltimore City neighborhoods with the lowest median household income. It is evident in this table that these neighborhoods are well in the poverty threshold. 
 ```
 
-1.  What is the Black population in the five neighborhoods with the lowest median household income?
+1.  \[What is the Black population in the five neighborhoods with the lowest median household income?
 
 ```{r}
 black_population <- read_csv("black_population.csv")
@@ -75,20 +75,24 @@ dispo <- black_population %>%
   filter(CSA2010 %in% c("Upton/Druid Heights", "Sandtown-Winchester/Harlem Park", "Southwest Baltimore", "Oldtown/Middle East", "Cherry Hill")) 
 
 dispo <- dispo %>% 
-  select(paa20, CSA2010) %>% 
-  group_by(paa20, CSA2010) %>% 
-  count()
+  select(CSA2010, paa20) 
 
-dispo_pivot <- dispo %>% 
-  pivot_wider(names_from = CSA2010, values_from = n) %>% 
-  as.data.frame()
+ggplot(dispo, aes(x = CSA2010, y = paa20, fill = paa20)) +
+  geom_col() +
+  coord_flip() +
+  geom_text(aes(label = paa20), hjust = -0.1, size = 2.5) +
+  labs(
+    title = "Percentage Black population in poorest Baltimore neighborhoods",
+    x = "Neighborhoods",
+    y = "Percentage Black Population",
+    caption = "Source: US Census Data"
+  )
 #The five most impoverished neighborhoods in Baltimore City had a majority-Black population as of 2020. Sandtown-Winchester had a 92.5% Black population, Cherry Hill had a 89.1% Black population, Upton/Druid Heights had an 88% Black population, Oldtown/Middle East had a 77.5% Black population and Southwest Baltimore had a 75.2% Black population. 
 
 
 ```
 
-/
-1.  What is the child poverty rate in those 5 neighborhoods?
+/ 1. What is the child poverty rate in those 5 neighborhoods?
 
 ```{r}
 poverty_child <- read_csv("poverty_baltimore.csv")
@@ -98,14 +102,8 @@ dispo_poverty <- filter_poverty %>%
   filter(CSA2020 %in% c("Upton/Druid Heights", "Sandtown-Winchester/Harlem Park", "Southwest Baltimore", "Oldtown/Middle East", "Cherry Hill"))
 
 dispo_poverty <- dispo_poverty %>% 
-  select(hhchpov20, CSA2020) %>% 
-  group_by(hhchpov20, CSA2020) %>% 
-  count()
+  select(CSA2020, hhchpov20) 
 
-dispo_pivot_poverty <- dispo_poverty %>% 
-  pivot_wider(names_from = CSA2020, values_from = n) %>% 
-  as.data.frame()
+
 #The five neighborhoods in Baltimore City that have the lowest household income and are below the 2020 poverty rate also have relatively high rates of childhood poverty. Oldtown/Middle East is the only neighborhood without a majority percentage of childhood poverty (48.6%), with Cherry Hill having a 51.2% childhood poverty rate, Southwest Baltimore having a 55.5% childhood poverty rate, Sandtown-Winchester/Harlem Park having a 60.5% childhood poverty rate, and Upton/Druid Heights having a 69.8% childhood poverty rate. 
 ```
-
-
