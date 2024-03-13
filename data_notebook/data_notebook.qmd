@@ -4,10 +4,13 @@ format: html
 editor: visual
 ---
 
+**Ela Jalil, Notebook #1, March 12**
+
 Background:
 
 ```{r}
-#The question that guided this data notebook is determining the amount of children living in poverty in Baltimore City, analyzing it along racial and geographic lines. I will be using two data sets for this project: one called baltcity_income_clean that gives the median household income of each neighborhood in Baltimore City. I will also be using black_population to help determine the Black population in each CSA of Baltimore City. #These data sets were cleaned from US Census data. The US Census Bureau conducts a study every 10 years which counts every resident in the United States, with the most recent one being in 2020. 
+#The question that guided this data notebook is determining the amount of children living in poverty in Baltimore City, analyzing it along racial and geographic lines. I will be using two data sets for this project: one called baltcity_income_clean that gives the median household income of each neighborhood in Baltimore City. I will also be using black_population to help determine the Black population in each CSA of Baltimore City.
+#These data sets were cleaned from US Census data. The US Census Bureau conducts a study every 10 years which counts every resident in the United States, with the most recent one being in 2020. 
 ```
 
 Library
@@ -16,6 +19,7 @@ Library
 #Loading libraries
 library(tidyverse)
 library(janitor)
+library(knitr)
 ```
 
 1.  What is a summary of the median household income per neighborhood in Baltimore City?
@@ -67,10 +71,9 @@ top5 %>%
 #For additional context for these five neighborhoods,there are 19 neighborhoods in Baltimore City in 2020 that were below the poverty line. The five neighborhoods with the lowest household median income is Upton/ Druid Heights ($13,559), Sandtown-Winchester/Harlem Park ($13,963), Southwest Baltimore ($14,269), Oldtown/Middle East ($14,304), Cherry Hill ($14,349). The chart that I created shows the five Baltimore City neighborhoods with the lowest median household income. It is evident in this table that these neighborhoods are well in the poverty threshold. 
 ```
 
-1.  \[What is the Black population in the five neighborhoods with the lowest median household income?
+1.  What is the Black population in the five neighborhoods with the lowest median household income?
 
 ```{r}
-#wrap headline
 black_population <- read_csv("black_population.csv")
 dispo <- black_population %>%  
   filter(CSA2010 %in% c("Upton/Druid Heights", "Sandtown-Winchester/Harlem Park", "Southwest Baltimore", "Oldtown/Middle East", "Cherry Hill")) 
@@ -107,4 +110,27 @@ dispo_poverty <- dispo_poverty %>%
 
 
 #The five neighborhoods in Baltimore City that have the lowest household income and are below the 2020 poverty rate also have relatively high rates of childhood poverty. Oldtown/Middle East is the only neighborhood without a majority percentage of childhood poverty (48.6%), with Cherry Hill having a 51.2% childhood poverty rate, Southwest Baltimore having a 55.5% childhood poverty rate, Sandtown-Winchester/Harlem Park having a 60.5% childhood poverty rate, and Upton/Druid Heights having a 69.8% childhood poverty rate. 
+```
+
+Reporting Memo and Story Pitch
+
+```{r}
+#To start off my data analysis I utilized three data sets: baltcity_income_clean, black_population and poverty_child. The first data set was cleaned from the US Census Data, as it conducts a study every 10 years that gathers data on every resident of the United States. The second and third data sets were obtained from the Baltimore Neighborhood Alliance, which got its data from the American Community Survey. 
+
+#I first found summary statistics regarding the median household income, which gave me the minimum value of $13,559, which I then filtered to determine that value was associated with Upton/Druid Heights. I then did some background research on what the poverty threshold is for a four-person household in 2020, which I found was $26,200. After running an analysis on the five neighborhoods with the lowest median household income, I determined that none of the neighborhoods even reached $20,000. I then determined the Black population and the child poverty rate of each neighborhood.  
+
+#A story that I would like to pursue from my analysis is to look into why the racial breakdown of these poverty-ridden communities lean so heavily Black. Sandtown-Winchester/Harlem Park, which had a median household income of $13,693, had a Black population of 92.5% and a child poverty rate of 60.5%. After looking into this city, I learned that it is a historically Black neighborhood that has experienced a lot of unrest over the years - where most notably Freddie Gray grew up. A New York Times article “A Portrait of the Sandtown Neighborhood in Baltimore” described how many residents have abandoned the neighborhood due to poor living conditions. I would go into this neighborhood and interview residents that have lived in the area for years, to gain an understanding of what is causing these desolate conditions. Is it lack of resources or infrastructure - or are there systemic problems that are in place that are not conducive to a “quick fix”? Another neighborhood worth noting is Upton/Druid Heights which had the lowest median household income, with an 88% Black population and a 69.8% child poverty rate. According to Promise Heights this was the first Black neighborhood in Baltimore that has a lot of significance to the Black community. Promise Heights is an organization that is working to provide resources to families in Upton/Druid Heights in collaboration with the University of Maryland School of Social Work. This provides a link to UMD, as well as provides insight into the resources at play in this neighborhood. I would do this analysis on every single neighborhood in the top five poorest neighborhoods to get an accurate picture of the socioeconomic background that leads to these poverty ridden conditions. 
+```
+
+Tweets
+
+```{r}
+#Tweet 1: The 2020 census poverty threshold for a four-person family was $26,200. Five Baltimore City neighborhoods’ median income fell far below that, not even reaching $20,000. Upton/Druid Heights ranked the lowest, with an income of $13,559, an analysis shows. 
+knitr::include_graphics("/Users/elajalil/Documents/GitHub/ela_jalil_jour472/data_notebook/images/img1.png")
+```
+
+```{r}
+#The five Baltimore City neighborhoods with the lowest median household income all have a majority Black population, an analysis shows. Sandtown-Winchester/Harlem Park is a historically Black neighborhood that had a 92.4% Black population, and a median income of $13,963. 
+knitr::include_graphics("/Users/elajalil/Documents/GitHub/ela_jalil_jour472/data_notebook/images/Rplot01.png")
+
 ```
