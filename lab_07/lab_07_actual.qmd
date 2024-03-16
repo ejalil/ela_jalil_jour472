@@ -79,14 +79,19 @@ help(group_by)
 
 ```{r}
 #This adds up all of the pills between 2006 and 2014 by county
-arcos_sum <- arcos %>%
-  group_by(countyfips, buyer_county,buyer_state) %>% 
-  summarize(totalpills = sum(total_pills)
-  ) %>% inner_join(county_pop2014, by=c("countyfips"="geoid"))
 
-#arcos county<- arcos %>% group_by(countyfips,buyer_county,buyer_state) %>% summarise(total_pills = sum(total_pills)) %>% inner_join(county_population_2014, by=c("countyfips"="geoid")) %>% mutate(pills_per_person = total_pills/total_population_2014) %>% arrange(desc(pills_per_person)) arcos_county
+arcos_county <- arcos %>%
+  group_by(countyfips,buyer_county,buyer_state) %>% 
+  summarise(
+    total_pills = sum(total_pills)
+    ) %>% 
+  inner_join(county_pop2014, by=c("countyfips"="geoid")) %>%
+  mutate(pills_per_person = total_pills/total_population_2014) %>% 
+  arrange(desc(pills_per_person))
 
+arcos_county
 
+#Norton City, Virginia receieved the most total pills per person. Its total amount of pills is 10555170 with a total population in 2014 of 4015. This makes its pills per person rate 2628.9340. 
 ```
 
 **Q2_New** Which U.S. state saw the highest percentage increase in opiod
@@ -104,7 +109,29 @@ table with the 5 states with the lowest percentage increase.
 from the finding in question two.
 
 ```{r}
+#table one
+total_2006 <-arcos %>% 
+  filter(year==2006) %>% 
+  clean_names()
+#table two
+total_2014 <- arcos %>% 
+  filter(year==2014) %>% 
+  clean_names()
+#combining 2006 and 2014
+arcos_combo <- total_2006 %>%
+  inner_join(total_2014, by="countyfips") %>% 
+  clean_names()
+arcos_combo_sidewalk<- arcos_combo %>% inner_join(state_crosswalk, by=c("buyer_state_x"="state_abb"))
+new_arcos <-arcos_combo_sidewalk %>% 
+  select(state_name, total_pills_x, total_pills_y) %>% 
+  mutate(pct_change = ((total_pills_y-total_pills_x)/(total_pills_x)*100)) 
+top_5 <- new_arcos %>%
+  slice_max(pct_change, n=5)
+bottom_5 <- new_arcos %>% 
+  slice_min(pct_change, n=5)
+# The top 5 states with a percentage increase between 2006 and 2014 were Missouri (36118.9055%), Alaska (4550.0000%), Texas (2500.0000%), Virginia (913.2187%), and South Dakota (434.5588%).
 
+#Lede: Missouri had the largest increase in total opioid pills between 2006 and 2014, an analysis of county opioid data shows. 
 ```
 
 **Q3** Which U.S. state had the highest number of opioid pills per
